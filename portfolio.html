@@ -14,21 +14,35 @@
     <link rel="icon" href="logo.png">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="portfolio.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#C8A45D">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
+    <!-- ================= PRELOADER ================= -->
 
-<!-- ================= HEADER ================= -->
+<div id="preloader">
 
-<header>
+    <div class="loader">
 
-    <div class="container">
-            <div class="logo">
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+    <!-- Header -->
+
+    <header>
+
+<div class="container">
+
+<div class="logo">
 
 <a href="index.html">
 
@@ -38,28 +52,35 @@
 
 </div>
 
-        <nav>
+<div class="menu-toggle" id="menu-toggle">
 
-            <ul>
+<span></span>
+<span></span>
+<span></span>
 
-                <li><a href="index.html">Home</a></li>
+</div>
 
-                <li><a href="about.html">About</a></li>
+<nav id="navbar">
 
-                <li><a href="services.html">Services</a></li>
+<ul>
 
-                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+<li><a href="index.html">Home</a></li>
 
-                <li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
 
-            </ul>
+<li><a href="services.html">Services</a></li>
 
-        </nav>
+<li><a href="portfolio.html" class="active">Portfolio</a></li>
 
-    </div>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
 
 </header>
-
 <!-- ================= HERO ================= -->
 
 <section class="portfolio-hero">
@@ -109,7 +130,7 @@
 
     <div class="project-card">
 
-        <img src="project2.jpeg" alt="Living Room">
+        <img loading="lazy" src="project2.jpeg" alt="Living Room">
 
         <div class="project-info">
 
@@ -128,7 +149,7 @@
 
     <div class="project-card">
 
-        <img src="project3.jpeg" alt="Modern Interior">
+        <img loading="lazy" src="project3.jpeg" alt="Modern Interior">
 
         <div class="project-info">
 
@@ -147,7 +168,7 @@
 
     <div class="project-card">
 
-        <img src="project4.jpeg" alt="Office Design">
+        <img loading="lazy" src="project4.jpeg" alt="Office Design">
 
         <div class="project-info">
 
@@ -166,7 +187,7 @@
 
     <div class="project-card">
 
-        <img src="project5.jpeg" alt="Office Workspace">
+        <img loading="lazy" src="project5.jpeg" alt="Office Workspace">
 
         <div class="project-info">
 
@@ -185,7 +206,7 @@
 
     <div class="project-card">
 
-        <img src="project6.jpeg" alt="Renovation">
+        <img loading="lazy" src="project6.jpeg" alt="Renovation">
 
         <div class="project-info">
 
@@ -311,6 +332,22 @@ target="_blank">
     <img src="whatsapp.png" alt="WhatsApp">
 
 </a>
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div id="lightbox">
+
+<img id="lightbox-img">
+
+<span id="close-lightbox">&times;</span>
+
+</div>
+
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
+<script src="script.js"></script>
 </body>
 
 </html>

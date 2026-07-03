@@ -14,19 +14,36 @@ content="Learn more about AUJ Interior, our mission, vision and professional int
 <link rel="icon" href="logo.png">
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="about.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
-
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#C8A45D">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
+    <!-- ================= PRELOADER ================= -->
 
-<header>
+<div id="preloader">
+
+    <div class="loader">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+    <!-- Header -->
+
+    <header>
 
 <div class="container">
-            <div class="logo">
+
+<div class="logo">
 
 <a href="index.html">
 
@@ -36,13 +53,21 @@ rel="stylesheet">
 
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<nav id="navbar">
 
 <ul>
 
 <li><a href="index.html">Home</a></li>
 
-<li><a class="active" href="about.html">About</a></li>
+<li><a href="about.html" class="active">About</a></li>
 
 <li><a href="services.html">Services</a></li>
 
@@ -83,7 +108,7 @@ comfort and functionality for every client.
 
 <div class="about-image">
 
-<img src="about-office.jpeg" alt="AUJ Interior">
+<img loading="lazy" src="about-office.jpeg" alt="AUJ Interior">
 
 </div>
 
@@ -339,6 +364,8 @@ satisfaction.
 
 </footer>
 
+<script src="script.js"></script>
+
 <!-- WhatsApp Button -->
 
 <a href="https://wa.me/923254433083"
@@ -348,6 +375,11 @@ target="_blank">
     <img src="whatsapp.png" alt="WhatsApp">
 
 </a>
+
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
 </body>
 
 </html>

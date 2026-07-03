@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://YOURDOMAIN.com/sitemap.xml
+Sitemap: https://aujinterior.com/sitemap.xml

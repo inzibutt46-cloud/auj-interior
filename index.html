@@ -18,37 +18,15 @@ content="AUJ Interior, interior design, home decoration, renovation, false ceili
 
 <link rel="canonical" href="https://aujinterior.com/">
 
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AUJ Interior | Interior Design, Home Decoration & Renovation Pakistan</title>
-
-<meta name="description"
-content="AUJ Interior provides professional interior design, home decoration, renovation, false ceiling, wall paneling, paint, office interior, commercial interior and construction services in Pakistan.">
-
-<meta name="keywords"
-content="AUJ Interior, interior design, home decoration, renovation, false ceiling, ceiling design, wall paneling, paint services, office interior, commercial interior, luxury interior, home renovation, construction company Pakistan">
-
-<meta name="author" content="AUJ Interior">
-
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://aujinterior.com/">    <!-- domain-->
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AUJ Interior">
 <meta name="twitter:description" content="Professional Interior Design & Renovation Company">
 <meta name="twitter:image" content="https://aujinterior.com/logo.png">
 
-
 <link rel="icon" type="image/png" href="logo.png">
 
-
-
-    <link rel="icon" type="image/png" href="logo.png">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
@@ -69,14 +47,32 @@ content="AUJ Interior, interior design, home decoration, renovation, false ceili
 }
 </script>
 
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#C8A45D">
 </head>
 <body>
+    <div id="progress-bar"></div>
+    <!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+
+    <div class="loader">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
 
     <!-- Header -->
 
     <header>
-        <div class="container">
-            <div class="logo">
+
+<div class="container">
+
+<div class="logo">
 
 <a href="index.html">
 
@@ -84,19 +80,37 @@ content="AUJ Interior, interior design, home decoration, renovation, false ceili
 
 </a>
 
-</div>            
+</div>
 
-            <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<div class="menu-toggle" id="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<nav id="navbar">
+
+<ul>
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
 
     <!-- Hero Section -->
 
@@ -118,19 +132,28 @@ content="AUJ Interior, interior design, home decoration, renovation, false ceili
     <section class="stats reveal">
 
     <div class="stat">
-        <h2>100+</h2>
-        <p>Projects Completed</p>
-    </div>
 
-    <div class="stat">
-        <h2>50+</h2>
-        <p>Happy Clients</p>
-    </div>
+<h2 class="counter" data-target="100">0</h2>
 
-    <div class="stat">
-        <h2>5+</h2>
-        <p>Years Experience</p>
-    </div>
+<p>Projects Completed</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="50">0</h2>
+
+<p>Happy Clients</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="5">0</h2>
+
+<p>Years Experience</p>
+
+</div>
 
 </section>
 
@@ -190,12 +213,12 @@ content="AUJ Interior, interior design, home decoration, renovation, false ceili
 
             <div class="gallery">
 
-                <img src="project1.jpeg" alt="Luxury Bedroom Design">
-                <img src="project2.jpeg" alt="Luxury Living Room Design">
-                <img src="project3.jpeg" alt="Modern Interior Space">
-                <img src="project4.jpeg" alt="Commercial Office Design">
-                <img src="project5.jpeg" alt="Office Interior Design">
-                <img src="project6.jpeg" alt="Renovation Project">
+                <img loading="lazy" src="project1.jpeg" alt="Luxury Bedroom Design">
+                <img loading="lazy" src="project2.jpeg" alt="Luxury Living Room Design">
+                <img loading="lazy" src="project3.jpeg" alt="Modern Interior Space">
+                <img loading="lazy" src="project4.jpeg" alt="Commercial Office Design">
+                <img loading="lazy" src="project5.jpeg" alt="Office Interior Design">
+                <img loading="lazy" src="project6.jpeg" alt="Renovation Project">
 
             </div>
 
@@ -261,11 +284,7 @@ target="_blank">
 
 <!-- Back To Top -->
 
-<button id="topBtn">
-
-↑
-
-</button>
+<button id="topBtn">↑</button>
 
 </body>
 </html>

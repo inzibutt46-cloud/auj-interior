@@ -13,25 +13,55 @@
 <link rel="icon" href="logo.png">
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="contact.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#C8A45D">
 </head>
 
 <body>
 
-<header>
+     <div id="progress-bar"></div>
+    <!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+
+    <div class="loader">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+    <!-- Header -->
+
+    <header>
 
 <div class="container">
 
 <div class="logo">
+
 <a href="index.html">
-<img src="logo.png" alt="Logo">
+
+<img src="logo.png" alt="AUJ Interior Logo">
+
 </a>
+
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<nav id="navbar">
 
 <ul>
 
@@ -43,7 +73,7 @@
 
 <li><a href="portfolio.html">Portfolio</a></li>
 
-<li><a class="active" href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
 
 </ul>
 
@@ -123,22 +153,21 @@ We'd love to hear about your project.
 
 <div class="contact-form">
 
-<form>
+<form action="https://sheetdb.io/api/v1/emh7paotoqhz4"
+method="POST" >
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="data[Name]" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="data[Email]" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number">
+<input type="tel" name="data[Phone]" placeholder="Phone Number">
 
-<input type="text" placeholder="Subject">
+<input type="text" name="data[Service]" placeholder="Subject">
 
-<textarea rows="6" placeholder="Your Message"></textarea>
+<textarea name="data[Message]" placeholder="Your Message" rows="5"></textarea>
 
-<button class="btn">
-
+<button type="submit" class="btn">
 Send Message
-
 </button>
 
 </form>
@@ -209,6 +238,11 @@ target="_blank">
     <img src="whatsapp.png" alt="WhatsApp">
 
 </a>
+
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
 </body>
 
 </html>

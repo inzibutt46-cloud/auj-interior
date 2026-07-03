@@ -14,29 +14,53 @@ content="Professional residential and commercial interior design services by AUJ
 <link rel="icon" href="logo.png">
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="services.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#C8A45D">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
+    <!-- ================= PRELOADER ================= -->
 
-<!-- ================= HEADER ================= -->
+<div id="preloader">
 
-<header>
+    <div class="loader">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+    <!-- Header -->
+
+    <header>
 
 <div class="container">
 
 <div class="logo">
 
 <a href="index.html">
+
 <img src="logo.png" alt="AUJ Interior Logo">
+
 </a>
 
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<nav id="navbar">
 
 <ul>
 
@@ -44,7 +68,7 @@ content="Professional residential and commercial interior design services by AUJ
 
 <li><a href="about.html">About</a></li>
 
-<li><a class="active" href="services.html">Services</a></li>
+<li><a href="services.html" class="active">Services</a></li>
 
 <li><a href="portfolio.html">Portfolio</a></li>
 
@@ -57,7 +81,6 @@ content="Professional residential and commercial interior design services by AUJ
 </div>
 
 </header>
-
 <!-- ================= HERO ================= -->
 
 <section class="service-hero">
@@ -436,6 +459,11 @@ target="_blank">
     <img src="whatsapp.png" alt="WhatsApp">
 
 </a>
+
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
 </body>
 
 </html>
